@@ -173,7 +173,7 @@ a {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-/* ============банер/фильтер============= */
+/* ============банер-герой============= */
 .hero {
   background-color: var(--background-hero);
   padding-top: 200px;
@@ -231,6 +231,8 @@ a {
   background-color: var(--accent-color);
 }
 
+/*===========фильтер портфолио============*/
+
 .filter-buttons-list {
   display: flex;
   justify-content: center;
@@ -265,6 +267,50 @@ a {
   0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+/*===================== портфолио =================*/
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.project-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.project-link {
+  text-decoration:none;
+  display: block;
+}
+.project-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card-project {
+  padding: 20px 24px;
+  background: var(--footer-text-color);
+  border: 1px solid #eeeeee;
+  border-top: none;
+  box-sizing: border-box;
+}
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--titl-text-color);
+}
+.development-type {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+.development-type {
+ color: var(--text-color);
+}
+
 /* ======================особености======================== */
 .features-list {
   display: flex;
@@ -279,7 +325,6 @@ a {
   margin-top: 30px;
 
 }
-
 .title-feature { 
   font-weight: 700;
   font-size: 14px;
@@ -289,7 +334,6 @@ a {
   color: var(--titl-text-color);
   margin-bottom: 10px;
 }
-
 .descktription-feature {
   font-size: 14px;
   line-height: 1.71;
@@ -331,7 +375,6 @@ a {
 .team {
   background-color: var(--background-team);
 }
-
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -348,9 +391,9 @@ a {
   margin-top: -30px;
 }
 .team-soc-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     
 }
 .team-soc-link {
@@ -371,14 +414,11 @@ a {
 .team-soc-link:hover .team-soc-icon {
   fill: #ffffff;
 }
-
 .team-soc-icon {
-    fill: var(--icon-color);
+  fill: var(--icon-color);
 }
-
-
 .team-soc-item:not(:last-child){
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .projects-title {
   position: absolute;
@@ -392,24 +432,11 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
 .card-item {
   flex-basis: calc((100% - 120px) / 4);
   margin-right: 30px;
   margin-top: 30px;
 }
-.project-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
 .card-title {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -418,14 +445,6 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.card-project {
-  padding: 20px 24px;
-  background: var(--footer-text-color);
-  border: 1px solid #eeeeee;
-  border-top: none;
-  box-sizing: border-box;
-}
-
 .member-name {
   font-weight: 500;
   font-size: 16px;
@@ -435,25 +454,6 @@ a {
   color: var(--titl-text-color);
   margin-bottom: 10px;
 }
-
-.project-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--titl-text-color);
-}
-.project-link {
-  text-decoration:none;
-  display: block;
-}
-
-.project-link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-  0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .member-metier {
   font-size: 16px;
   line-height: 1.18;
@@ -461,21 +461,13 @@ a {
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
-
-.development-type {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-
-.member-metier,
-.development-type {
-  color: var(--text-color);
+.member-metier {
+ color: var(--text-color);
 }
 
 /* =======================Постоянные клиенты================ */
 .section-title {
-    font-weight: 700;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -486,30 +478,30 @@ a {
 
 
 .client-link {
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: var(--icon-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-color);
 }
 
 .client-list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .client-item:not(:last-child) {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .client-link:hover,
 .client-link:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* =======================Подвал=========================== */
@@ -553,48 +545,48 @@ a {
 }
 
 .address-container{
-    margin-right: 70px;
+  margin-right: 70px;
 }
 
 .container.address{
-    align-items: baseline;
-    display: flex;
+  align-items: baseline;
+  display: flex;
 }
 
 
 
 .join-text{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 
-    color: var(--footer-text-color);
+  color: var(--footer-text-color);
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .join-soc-list{
-    display: flex;
+  display: flex;
 }
 
 .join-soc-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: var(--footer-text-color);
-    background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--footer-text-color);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .join-soc-item:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .join-soc-link:hover,
 .join-soc-link:focus {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 

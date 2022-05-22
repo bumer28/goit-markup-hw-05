@@ -478,7 +478,8 @@ overflow: hidden;
   height: 44px;
   border-radius: 50%;
     
-  background-color: #FFFFFF;   
+  background-color: #FFFFFF;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
@@ -487,9 +488,11 @@ overflow: hidden;
 }
 .team-soc-link:hover .team-soc-icon {
   fill: #ffffff;
+ 
 }
 .team-soc-icon {
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-soc-item:not(:last-child){
   margin-right: 10px;
@@ -561,6 +564,7 @@ overflow: hidden;
   justify-content: center;
   align-items: center;
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-list {
